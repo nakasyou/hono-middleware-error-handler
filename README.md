@@ -36,7 +36,7 @@ errorHandlerMiddleware({
 })
 ```
 Custom transform:
-```
+```ts
 errorHandlerMiddleware({
   transform: ({
     type, // Init type ('text', 'html', 'json')
