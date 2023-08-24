@@ -3,7 +3,7 @@ Catch server error middleware for Hono.
 ## How to use it?
 ```ts
 import { Hono } from 'https://deno.land/x/hono/mod.ts'
-import { errorHandlerMiddleware } from 'https://deno.land/x/hono-middleware-error-handler/mod.ts'
+import { errorHandlerMiddleware } from 'https://deno.land/x/hono_middleware_error_handler/mod.ts'
 
 const app = new Hono()
 
