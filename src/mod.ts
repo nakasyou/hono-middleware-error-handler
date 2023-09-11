@@ -67,6 +67,7 @@ ${
     //try {
       await next()
     //} catch (error) {
+    if (ctx.error) {
       const resText = init.transform!({
         error: ctx.error,
         type: init.type!,
@@ -74,5 +75,7 @@ ${
       ctx.status(init.status!)
       return ctx.text(resText)
     //}
+    }
   }
+  
 }
